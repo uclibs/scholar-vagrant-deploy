@@ -7,9 +7,9 @@ echo "Cloning Curate_UC..."
 git clone https://github.com/uclibs/curate_uc.git
 cd /srv/apps/curate_uc
 git checkout develop
-export PATH=$PATH:/srv/apps/.gem/ruby/2.1.0/bin
 
 echo "Running bundler..."
+export PATH=$PATH:/srv/apps/.gem/ruby/2.1.0/bin
 gem install --user-install bundler
 bundle install --path vendor/bundle
 
