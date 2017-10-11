@@ -3,10 +3,10 @@
 cd /srv/apps
 rm -rf curate_uc
 
-echo "Cloning Curate_UC..."
+echo "Cloning Scholar_UC..."
 git clone https://github.com/uclibs/scholar_uc.git curate_uc
 cd /srv/apps/curate_uc
-git checkout develop
+git checkout vagrant
 
 mkdir tmp
 chmod +x script/*.sh
